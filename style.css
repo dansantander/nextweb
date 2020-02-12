@@ -123,3 +123,40 @@ body {
 .story.two {
   background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/uk-facebook-twitter-free-speech-harmful-content-796x417.jpg);
 }
+
+/* latest news section */
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 44px repeat(8, 1fr);
+  width: 100%;
+  height: 1452;
+  margin-top: 25px;
+}
+
+.latest-news-items {
+  display: grid;
+  grid-template-columns: 75px 3fr;
+  grid-template-rows: 1fr;
+  margin: 5px;
+}
+
+.latest-news-items-photo {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+
+.latest-news-items img {
+  width: 100px;
+}
+
+.latest-news-items-info {
+  padding-left: 7px;
+}
+
+.latest-news-items-info p {
+  font-size: xx-small;
+}
