@@ -6,3 +6,68 @@
   box-sizing: border-box;
   font-size: inherit;
 }
+
+
+.header-logo-container {
+  width: 106px;
+  height: 48px;
+  background-color: rgb(119, 16, 16);
+  align-items: center;
+}
+
+.header-logo-container img {
+  width: 66px;
+  margin: 21px;
+  margin-top: 16px;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.top-left-header {
+  float: left;
+}
+
+.top-left-header{
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.search {
+  width: 48px;
+  height: 48px;
+}
+
+.search i{
+  margin: 21px;
+  margin-top: 16px;
+}
+
+.hamburger {
+  width: 48px;
+  height: 48px;
+}
+
+.hamburger i{
+  margin: 21px;
+  margin-top: 16px;
+}
+
+.startups-bar {
+  width: 100%;
+  height: 24px;
+  background-color: rgb(224, 224, 53);
+  text-align: center;
+  font-size: x-small;
+  padding-top: 6px;
+}
+
+
