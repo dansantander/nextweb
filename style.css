@@ -135,6 +135,10 @@ body {
   margin-top: 25px;
 }
 
+.latest-news-tlt h1 {
+  color: #f24120;
+}
+
 .latest-news-items {
   display: grid;
   grid-template-columns: 75px 3fr;
@@ -143,6 +147,7 @@ body {
 }
 
 .latest-news-items-photo {
+  position: relative;
   display: inline-block;
   width: 75px;
   height: 75px;
@@ -151,6 +156,8 @@ body {
 
 .latest-news-items img {
   width: 100px;
+  position: absolute;
+  left: -13px;
 }
 
 .latest-news-items-info {
