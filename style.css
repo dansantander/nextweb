@@ -78,7 +78,6 @@ body {
   padding-top: 8px;
 }
 
-
 /* Hero */
 
 .hero {
@@ -130,7 +129,6 @@ body {
   background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/uk-facebook-twitter-free-speech-harmful-content-796x417.jpg);
 }
 
-
 /* latest news section */
 
 .latest-news {
@@ -150,7 +148,7 @@ body {
   display: grid;
   grid-template-columns: 75px 3fr;
   grid-template-rows: 1fr;
-  margin: 5px;
+  margin-bottom: 13px;
 }
 
 .latest-news-items-photo {
@@ -162,19 +160,31 @@ body {
 }
 
 .latest-news-items img {
-  width: 100px;
+  width: 150px;
   position: absolute;
   left: -13px;
 }
 
 .latest-news-items-info {
-  padding-left: 7px;
+  padding-left: 13px;
+}
+
+.latest-news-items-info h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
 }
 
 .latest-news-items-info p {
-  font-size: xx-small;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  font-weight: 300;
 }
 
+.latest-news-items-info span {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(90, 90, 90);
+}
 
 /* Funding Section */
 
@@ -284,7 +294,6 @@ body {
   color: rgb(177, 177, 177);
 }
 
-
 /* Features section */
 
 .feature-bg {
@@ -352,7 +361,6 @@ body {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  /* height: 200px; */
 }
 
 .img-wrapper {
@@ -400,4 +408,90 @@ body {
   margin-bottom: 7px;
   padding-bottom: 6px;
   border-bottom: 1px solid #80808042;
+}
+
+/* Latest Deals */
+
+.latest-news-tlt.deals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.latest-news-tlt p {
+  font-size: 0.9rem;
+  color: #f24;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  color: white;
+}
+
+.top-footer {
+  background-color: #131313;
+}
+
+.social-icons {
+  padding: 40px 0 10px 0;
+}
+
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social-icons li {
+  background-color: #333;
+  border: 1px solid #333;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 150%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 9px;
+}
+
+.legal-statement {
+  background-color: black;
+}
+
+.more-about {
+  padding: 10px 0 50px 0;
+}
+
+.more-about ul {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: Shentox, sans-serif;
+  font-size: 11px;
+  color: gray;
+}
+
+.wrapper {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(170, 170, 170);
+  padding: 40px 0 40px 0;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+.footer-TNW {
+  width: 37px;
+}
+
+.footer-logoStackPath {
+  width: 65px;
 }
