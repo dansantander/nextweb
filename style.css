@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 96%;
+  width: 94%;
   margin: 0 auto;
 }
 
@@ -166,4 +166,112 @@ body {
 
 .latest-news-items-info p {
   font-size: xx-small;
+}
+
+/* Funding Section */
+
+.fund-item {
+  margin-bottom: 1rem;
+}
+
+.fund-list {
+  margin-top: 10px;
+  list-style: none;
+  color: #f24;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.funding-header {
+  position: relative;
+}
+
+.funding-header img {
+  width: 60px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.top-funding-header {
+  background-color: #f42;
+  color: white;
+  height: 42px;
+  padding-top: 10px;
+}
+
+.bottom-funding-header {
+  background-color: rgba(255, 68, 34, 0.15);
+  height: 57px;
+  padding-top: 10px;
+}
+
+.top-funding-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-funding-header a {
+  display: block;
+  padding-left: 5rem;
+}
+
+.bottom-funding-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bottom-funding-header p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.bottom-funding-header a {
+  display: block;
+  padding-left: 5rem;
+}
+
+.funding-features {
+  background-color: rgba(255, 68, 34, 0.06);
+  height: 125px;
+  font-size: 0.85rem;
+  font-weight: 150;
+  color: rgb(37, 37, 37);
+}
+
+.fund-feat-top {
+  border-bottom: 1px solid rgb(255, 198, 188);
+  line-height: 1.5rem;
+  padding: 15px 0 15px 15px;
+}
+
+.fund-feat-top a {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.fund-feat-top i {
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+}
+
+.fund-feat-bottom {
+  padding-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.fund-feat-bottom a {
+  display: block;
+  padding-left: 0.9rem;
+}
+
+.fund-feat-bottom span {
+  color: rgb(177, 177, 177);
 }
