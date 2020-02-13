@@ -78,6 +78,7 @@ body {
   padding-top: 8px;
 }
 
+
 /* Hero */
 
 .hero {
@@ -98,6 +99,11 @@ body {
 }
 
 .story p {
+  font-family: Shentox, sans-serif;
+  font-size: 0.5rem;
+}
+
+.story p:first-of-type {
   font-family: Shentox, sans-serif;
   font-size: 0.8rem;
 }
@@ -123,6 +129,7 @@ body {
 .story.two {
   background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/uk-facebook-twitter-free-speech-harmful-content-796x417.jpg);
 }
+
 
 /* latest news section */
 
@@ -167,6 +174,7 @@ body {
 .latest-news-items-info p {
   font-size: xx-small;
 }
+
 
 /* Funding Section */
 
@@ -274,4 +282,122 @@ body {
 
 .fund-feat-bottom span {
   color: rgb(177, 177, 177);
+}
+
+
+/* Features section */
+
+.feature-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 276px;
+  color: white;
+  padding: 0 0 5px 5px;
+  margin-bottom: 1px;
+}
+
+.feature-bg.feat1 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Valve-Steam-Link-hed-368x276.jpg);
+}
+
+.feature-bg.feat2 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/MWC-2-368x276.jpg);
+}
+
+.feature-bg.feat3 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/bezos-trump-368x276.jpg);
+}
+
+.feature-bg.feat4 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
+}
+
+.feature-bg.feat5 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/0567_BF2_5846-368x276.jpg);
+}
+
+.feature-bg.feat6 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoin-nasdaq-nikkei-stocks-small-cap-blocckhain-cryptocurrency-investment-368x276.jpg);
+}
+
+.feature-bg.feat7 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
+}
+
+.feature-bg.feat8 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Snag_51d2840b-368x276.png);
+}
+
+.feature-bg p {
+  font-family: Shentox, sans-serif;
+  font-size: x-small;
+}
+
+.feature-bg p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+}
+
+.feature-bg h2 {
+  font-family: Avalon, sans-serif;
+  font-size: 1.1rem;
+}
+
+.latest-article-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  /* height: 200px; */
+}
+
+.img-wrapper {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 200px;
+}
+
+.latest-article-info {
+  width: 70%;
+}
+
+.latest-article-info p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: small;
+  font-weight: 200;
+  color: red;
+}
+
+.latest-article-info p {
+  font-family: Shentox, sans-serif;
+  font-size: small;
+  font-weight: 600;
+  color: red;
+}
+
+.features-list li::before {
+  content: "\2022";
+  color: #f24;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.features-list li {
+  font-size: smaller;
+  list-style: none;
+  width: 98%;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #80808042;
 }
