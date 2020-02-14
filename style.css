@@ -523,7 +523,7 @@ body {
   .top-left-header {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: calc(100% - 106px);
     height: 80px;
   }
 
