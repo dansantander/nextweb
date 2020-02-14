@@ -673,7 +673,7 @@ body {
     grid-gap: 20px;
   }
 
-/* features tablet size */
+  /* features tablet size */
 
   .features {
     display: grid;
@@ -685,7 +685,7 @@ body {
 
   .latest-deals {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px repeat(3, 1fr);
     grid-gap: 15px;
   }
@@ -712,5 +712,17 @@ body {
     width: inherit;
     position: absolute;
     left: 0;
+  }
+
+  /* Footer tablet size */
+
+  .social-icons,
+  .more-about {
+    width: 48%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 55%;
   }
 }
