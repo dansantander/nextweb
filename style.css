@@ -152,6 +152,7 @@ body {
 
 .latest-news-tlt h1 {
   color: #f24120;
+  padding-bottom: 1rem;
 }
 
 .latest-news-items-wrapper {
@@ -310,6 +311,10 @@ body {
 }
 
 /* Features section */
+
+.features {
+  margin-top: 1rem;
+}
 
 .feature-bg {
   display: flex;
@@ -648,7 +653,7 @@ body {
     padding: 0;
   }
 
-  /* funding rounds tablet size*/
+  /* funding rounds tablet size */
 
   .fund-list {
     display: flex;
@@ -656,7 +661,7 @@ body {
     font-weight: 400;
   }
 
-  .fund-list li{
+  .fund-list li {
     border-right: rgba(247, 147, 110, 0.493) solid 1px;
     padding-right: 18px;
     padding-left: 10px;
@@ -666,5 +671,13 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+  }
+
+/* features tablet size */
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
   }
 }
