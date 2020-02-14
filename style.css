@@ -647,4 +647,24 @@ body {
   .latest-news-items-info {
     padding: 0;
   }
+
+  /* funding rounds tablet size*/
+
+  .fund-list {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .fund-list li{
+    border-right: rgba(247, 147, 110, 0.493) solid 1px;
+    padding-right: 18px;
+    padding-left: 10px;
+  }
+
+  .funding-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
 }
