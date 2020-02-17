@@ -142,11 +142,7 @@ body {
 /* latest news section */
 
 .latest-news {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 44px repeat(8, 1fr);
-  width: 100%;
-  height: 1452;
+/*   width: 80%; */
   margin-top: 25px;
 }
 
@@ -155,31 +151,69 @@ body {
   padding-bottom: 1rem;
 }
 
-.latest-news-items-wrapper {
+.latest-news-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  list-style: none;
+  grid-gap: 15px;
 }
 
 .latest-news-items {
-  display: grid;
-  grid-template-columns: 75px 3fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 13px;
+  display: flex;
 }
 
 .latest-news-items-photo {
+  height:75px;
+  min-width: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-news-items-photo.one{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-480x270.jpg);
+ 
+}
+
+.latest-news-items-photo.two{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-7-516x270.png);
+}
+
+.latest-news-items-photo.three{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-5-516x270.png);
+ 
+}
+
+.latest-news-items-photo.four{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Erica-GitHub-514x270.jpg);
+ 
+}
+
+.latest-news-items-photo.five{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-5-516x270.jpg);
+ 
+}
+.latest-news-items-photo.six{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/WhatsApp-516x270.png);
+ 
+}
+.latest-news-items-photo.seven{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/GitHub-brave-hed-514x270.jpg);
+ 
+}
+
+.latest-news-items-photo.eight{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/apple-pay-credit-debit-money-payments-digital-money-fintech-480x270.jpg);
+ 
+}
+
+/* .latest-news-items-photo {
   position: relative;
   display: inline-block;
   width: 75px;
   height: 75px;
   overflow: hidden;
-}
+} */
 
-.latest-news-items img {
-  width: 150px;
-  position: absolute;
-  left: -13px;
-}
 
 .latest-news-items-info {
   padding-left: 13px;
@@ -201,6 +235,15 @@ body {
   font-weight: 300;
   color: rgb(90, 90, 90);
 }
+
+
+  /* LATEST NEWS TABLET SIZE */
+
+  @media only screen and (min-width: 766px) {
+
+
+  }
+
 
 /* Funding Section */
 
@@ -444,6 +487,15 @@ body {
   color: #f24;
 }
 
+.latest-deals-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  grid-gap: 15px;
+}
+
+
+
 /* Footer */
 
 .footer {
@@ -626,22 +678,20 @@ body {
     grid-row: 1 / 3;
   }
 
-  /* LATEST NEWS TABLET SIZE */
 
-  .latest-news {
+/* latest news tablet size*/
+
+
+  .latest-news-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
+    grid-gap:15px;
   }
 
-  .latest-news-tlt {
-    grid-column: 1/4;
-  }
-
-  .latest-news-items {
-    grid-template-columns: 1fr;
-    width: 98%;
-    padding-bottom: 15px;
+.latest-news-items {
+  display: flex;
+  flex-direction: column;
   }
 
   .latest-news-items-photo {
@@ -649,13 +699,10 @@ body {
     height: 143px;
   }
 
-  .latest-news-items-photo img {
-    width: 305px;
-  }
-
   .latest-news-items-info {
     padding: 0;
   }
+
 
   /* funding rounds tablet size */
 
@@ -687,36 +734,18 @@ body {
 
   /* latest-deals table size */
 
-  .latest-deals {
+  .latest-deals-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-template-rows: repeat(3, auto);
+    grid-gap:15px;
   }
 
-  .latest-news-tlt.deals {
-    grid-column: 1 / -1;
-    padding: 15px 10px 0 0;
+ .latest-news-items-photo.deals {
+   height: 200px;
+   max-width: 270px;
   }
 
-  .latest-news-tlt.deals h1 {
-    font-size: xx-large;
-  }
-
-  .latest-news-items {
-    align-self: stretch;
-  }
-
-  .latest-news-items-photo {
-    width: 100%;
-    height: 262px;
-  }
-
-  .latest-news-items img {
-    width: inherit;
-    position: absolute;
-    left: 0;
-  }
 
   /* Footer tablet size */
 
