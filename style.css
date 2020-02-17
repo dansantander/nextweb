@@ -457,6 +457,8 @@ body {
 
 .social-icons {
   padding: 40px 0 10px 0;
+  max-width: 445px;
+  margin: 0 auto;
 }
 
 .social-icons ul {
@@ -484,6 +486,8 @@ body {
 
 .more-about {
   padding: 10px 0 50px 0;
+  max-width: 445px;
+  margin: 0 auto;
 }
 
 .more-about ul {
