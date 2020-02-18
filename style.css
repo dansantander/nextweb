@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .container {
-  width: 94%;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -60,23 +61,27 @@ body {
 .search {
   width: 48px;
   height: 48px;
-  border-left: 1px solid rgb(190, 190, 190);
+  border-left: 1px solid rgb(228, 228, 228);
 }
 
 .search i {
-  margin: 21px;
+  margin-left: 15px;
   margin-top: 16px;
+  color: rgb(184, 184, 184);
+  transform: scaleX(-1);
 }
 
 .hamburger {
   width: 48px;
   height: 48px;
-  border-left: 1px solid rgb(190, 190, 190);
+  border-left: 1px solid rgb(228, 228, 228);
 }
 
 .hamburger i {
-  margin: 21px;
-  margin-top: 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 22px;
+  color: #f42;
 }
 
 .startups-bar {
@@ -95,6 +100,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 29vh);
   grid-gap: 8px;
+  margin-bottom: 6rem;
 }
 
 .story {
@@ -142,16 +148,19 @@ body {
 /* latest news section */
 
 .latest-news {
-/*   width: 80%; */
   margin-top: 25px;
+  margin-bottom: 6rem;
 }
 
 .latest-news-tlt h1 {
-  color: #f24120;
-  padding-bottom: 1rem;
+  color: rgb(255, 49, 34);
+  font-family: Avalon, sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
 }
 
 .latest-news-wrapper {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   list-style: none;
@@ -163,57 +172,43 @@ body {
 }
 
 .latest-news-items-photo {
-  height:75px;
+  height: 75px;
   min-width: 75px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.latest-news-items-photo.one{
+.latest-news-items-photo.one {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-480x270.jpg);
- 
 }
 
-.latest-news-items-photo.two{
+.latest-news-items-photo.two {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-7-516x270.png);
 }
 
-.latest-news-items-photo.three{
+.latest-news-items-photo.three {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-5-516x270.png);
- 
 }
 
-.latest-news-items-photo.four{
+.latest-news-items-photo.four {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Erica-GitHub-514x270.jpg);
- 
 }
 
-.latest-news-items-photo.five{
+.latest-news-items-photo.five {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-5-516x270.jpg);
- 
 }
-.latest-news-items-photo.six{
+
+.latest-news-items-photo.six {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/WhatsApp-516x270.png);
- 
 }
-.latest-news-items-photo.seven{
+
+.latest-news-items-photo.seven {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/GitHub-brave-hed-514x270.jpg);
- 
 }
 
-.latest-news-items-photo.eight{
+.latest-news-items-photo.eight {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/apple-pay-credit-debit-money-payments-digital-money-fintech-480x270.jpg);
- 
 }
-
-/* .latest-news-items-photo {
-  position: relative;
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  overflow: hidden;
-} */
-
 
 .latest-news-items-info {
   padding-left: 13px;
@@ -236,16 +231,11 @@ body {
   color: rgb(90, 90, 90);
 }
 
-
-  /* LATEST NEWS TABLET SIZE */
-
-  @media only screen and (min-width: 766px) {
-
-
-  }
-
-
 /* Funding Section */
+
+.funding-rounds {
+  margin-bottom: 2rem;
+}
 
 .fund-item {
   margin-bottom: 1rem;
@@ -313,7 +303,7 @@ body {
 
 .funding-features {
   background-color: rgba(255, 68, 34, 0.06);
-  height: 125px;
+  height: 140px;
   font-size: 0.85rem;
   font-weight: 150;
   color: rgb(37, 37, 37);
@@ -346,7 +336,7 @@ body {
 
 .fund-feat-bottom a {
   display: block;
-  padding-left: 0.9rem;
+  padding: 0 0.9rem;
 }
 
 .fund-feat-bottom span {
@@ -356,7 +346,11 @@ body {
 /* Features section */
 
 .features {
-  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.feature {
+  margin-top: 2rem;
 }
 
 .feature-bg {
@@ -370,6 +364,7 @@ body {
   color: white;
   padding: 0 0 5px 5px;
   margin-bottom: 1px;
+  margin-top: 2rem;
 }
 
 .feature-bg.feat1 {
@@ -424,11 +419,12 @@ body {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .img-wrapper {
-  width: 75px;
-  height: 75px;
+  width: 96px;
+  height: 96px;
   overflow: hidden;
 }
 
@@ -438,6 +434,7 @@ body {
 
 .latest-article-info {
   width: 70%;
+  padding: 20px 0 0 15px;
 }
 
 .latest-article-info p:first-of-type {
@@ -465,15 +462,19 @@ body {
 
 .features-list li {
   font-size: smaller;
+  color: rgb(88, 88, 88);
   list-style: none;
   width: 98%;
   margin-left: 10px;
-  margin-bottom: 7px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #80808042;
+  border-bottom: 1px solid #a5a5a542;
+  padding: 10px 0;
 }
 
 /* Latest Deals */
+
+.latest-deals {
+  margin-bottom: 6rem;
+}
 
 .latest-news-tlt.deals {
   display: flex;
@@ -493,8 +494,6 @@ body {
   list-style: none;
   grid-gap: 15px;
 }
-
-
 
 /* Footer */
 
@@ -678,20 +677,18 @@ body {
     grid-row: 1 / 3;
   }
 
-
-/* latest news tablet size*/
-
+  /* latest news tablet size */
 
   .latest-news-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap:15px;
+    grid-gap: 15px;
   }
 
-.latest-news-items {
-  display: flex;
-  flex-direction: column;
+  .latest-news-items {
+    display: flex;
+    flex-direction: column;
   }
 
   .latest-news-items-photo {
@@ -702,7 +699,6 @@ body {
   .latest-news-items-info {
     padding: 0;
   }
-
 
   /* funding rounds tablet size */
 
@@ -738,14 +734,13 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap:15px;
+    grid-gap: 15px;
   }
 
- .latest-news-items-photo.deals {
-   height: 200px;
-   max-width: 270px;
+  .latest-news-items-photo.deals {
+    height: 200px;
+    max-width: 270px;
   }
-
 
   /* Footer tablet size */
 
