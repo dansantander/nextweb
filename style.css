@@ -444,13 +444,6 @@ body {
   padding: 20px 0 0 15px;
 }
 
-.latest-article-info p:first-of-type {
-  font-family: Shentox, sans-serif;
-  font-size: small;
-  font-weight: 200;
-  color: red;
-}
-
 .latest-article-info p {
   font-family: Shentox, sans-serif;
   font-size: small;
@@ -587,6 +580,13 @@ body {
 .feature-bg p:first-of-type {
   font-family: Shentox, sans-serif;
   font-size: 0.8rem;
+}
+
+.latest-article-info p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: small;
+  font-weight: 200;
+  color: red;
 }
 
 /* re-sizing tablet size */
