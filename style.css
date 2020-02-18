@@ -1,0 +1,898 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+}
+
+.container {
+  width: 99%;
+  margin: 0 auto;
+}
+
+.inner-container {
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+.header-logo-container {
+  width: 106px;
+  height: 48px;
+  background-color: #f42;
+  background-image: linear-gradient(to bottom right, #c09, #f42 85%);
+  align-items: center;
+}
+
+.header-logo-container img {
+  width: 66px;
+  margin: 21px;
+  margin-top: 16px;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 48px;
+  justify-content: space-between;
+}
+
+.top-left-header {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-left-up,
+.nav-bar-down {
+  display: none;
+}
+
+.top-left-down {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.search {
+  width: 48px;
+  height: 48px;
+  border-left: 1px solid rgb(228, 228, 228);
+}
+
+.search i {
+  margin-left: 15px;
+  margin-top: 16px;
+  color: rgb(184, 184, 184);
+  transform: scaleX(-1);
+}
+
+.hamburger {
+  width: 48px;
+  height: 48px;
+  border-left: 1px solid rgb(228, 228, 228);
+}
+
+.hamburger i {
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 22px;
+  color: #f42;
+}
+
+.startups-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #fd3;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 8px;
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 29vh);
+  grid-gap: 8px;
+  margin-bottom: 6rem;
+}
+
+.story {
+  width: 100%;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gradient-img,
+.logo-img {
+  display: none;
+}
+
+.story p {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.story h2 {
+  font-family: Avalon, sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+
+.story.main {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoin-nasdaq-nikkei-stocks-small-cap-blocckhain-cryptocurrency-investment-796x448.jpg);
+}
+
+.story-text-wrapper {
+  line-height: 1.3;
+  padding: 0 20px 10px;
+  z-index: 2;
+}
+
+.story.one {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-6-796x417.png);
+}
+
+.story.two {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/uk-facebook-twitter-free-speech-harmful-content-796x417.jpg);
+}
+
+/* latest news section */
+
+.latest-news {
+  margin-top: 25px;
+  margin-bottom: 6rem;
+}
+
+.latest-news-tlt h1 {
+  color: rgb(255, 49, 34);
+  font-family: Avalon, sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+.latest-news-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  grid-gap: 15px;
+}
+
+.latest-news-items {
+  display: flex;
+}
+
+.latest-news-items-photo {
+  height: 75px;
+  min-width: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-news-items-photo.one {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Tesla-model-s-range-390-miles-improve-battery-tech-drive-model-x-musk-twitter-tweet-480x270.jpg);
+}
+
+.latest-news-items-photo.two {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-7-516x270.png);
+}
+
+.latest-news-items-photo.three {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-5-516x270.png);
+}
+
+.latest-news-items-photo.four {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Erica-GitHub-514x270.jpg);
+}
+
+.latest-news-items-photo.five {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-5-516x270.jpg);
+}
+
+.latest-news-items-photo.six {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/WhatsApp-516x270.png);
+}
+
+.latest-news-items-photo.seven {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/GitHub-brave-hed-514x270.jpg);
+}
+
+.latest-news-items-photo.eight {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/apple-pay-credit-debit-money-payments-digital-money-fintech-480x270.jpg);
+}
+
+.latest-news-items-info {
+  padding-left: 13px;
+}
+
+.latest-news-items-info h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.latest-news-items-info p {
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  font-weight: 300;
+}
+
+.latest-news-items-info span {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(90, 90, 90);
+}
+
+/* Funding Section */
+
+.funding-rounds {
+  margin-bottom: 2rem;
+}
+
+.fund-item {
+  margin-bottom: 1rem;
+}
+
+.fund-item.ghost {
+  display: none;
+}
+
+.fund-list {
+  margin-top: 10px;
+  list-style: none;
+  color: #f24;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.funding-header {
+  position: relative;
+}
+
+.funding-header img {
+  width: 60px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.top-funding-header {
+  background-color: #f42;
+  color: white;
+  height: 42px;
+  padding-top: 10px;
+}
+
+.bottom-funding-header {
+  background-color: rgba(255, 68, 34, 0.15);
+  height: 57px;
+  padding-top: 10px;
+}
+
+.top-funding-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-funding-header a {
+  display: block;
+  padding-left: 5rem;
+}
+
+.bottom-funding-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bottom-funding-header p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: gray;
+}
+
+.bottom-funding-header a {
+  display: block;
+  padding-left: 5rem;
+}
+
+.funding-features {
+  background-color: rgba(255, 68, 34, 0.06);
+  height: 140px;
+  font-size: 0.85rem;
+  font-weight: 150;
+  color: rgb(37, 37, 37);
+}
+
+.fund-feat-top {
+  border-bottom: 1px solid rgb(255, 198, 188);
+  line-height: 1.5rem;
+  padding: 15px 0 15px 15px;
+}
+
+.fund-feat-top a {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.fund-feat-top i {
+  position: absolute;
+  top: 0.4rem;
+  left: 0;
+}
+
+.fund-feat-bottom {
+  padding-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.fund-feat-bottom a {
+  display: block;
+  padding: 0 0.9rem;
+}
+
+.fund-feat-bottom span {
+  color: rgb(177, 177, 177);
+}
+
+/* Features section */
+
+.features {
+  margin-bottom: 6rem;
+}
+
+.feature {
+  margin-top: 2rem;
+}
+
+.feature-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 276px;
+  color: white;
+  padding: 0 0 5px 5px;
+  margin-bottom: 1px;
+  margin-top: 2rem;
+}
+
+.feature-bg.feat1 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/Valve-Steam-Link-hed-368x276.jpg);
+}
+
+.feature-bg.feat2 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/MWC-2-368x276.jpg);
+}
+
+.feature-bg.feat3 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/bezos-trump-368x276.jpg);
+}
+
+.feature-bg.feat4 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
+}
+
+.feature-bg.feat5 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/0567_BF2_5846-368x276.jpg);
+}
+
+.feature-bg.feat6 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/bitcoin-nasdaq-nikkei-stocks-small-cap-blocckhain-cryptocurrency-investment-368x276.jpg);
+}
+
+.feature-bg.feat7 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
+}
+
+.feature-bg.feat8 {
+  background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Snag_51d2840b-368x276.png);
+}
+
+.feature-bg p {
+  font-family: Shentox, sans-serif;
+  font-size: x-small;
+}
+
+.feature-bg h2 {
+  font-family: Avalon, sans-serif;
+  font-size: 1.1rem;
+}
+
+.latest-article-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.img-wrapper {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 200px;
+}
+
+.latest-article-info {
+  width: 70%;
+  padding: 20px 0 0 15px;
+}
+
+.latest-article-info p {
+  font-family: Shentox, sans-serif;
+  font-size: small;
+  font-weight: 600;
+  color: red;
+}
+
+.features-list li::before {
+  content: "\2022";
+  color: #f24;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.features-list li {
+  font-size: smaller;
+  color: rgb(88, 88, 88);
+  list-style: none;
+  width: 98%;
+  margin-left: 10px;
+  border-bottom: 1px solid #a5a5a542;
+  padding: 10px 0;
+}
+
+/* Latest Deals */
+
+.latest-deals {
+  margin-bottom: 6rem;
+}
+
+.latest-news-tlt.deals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.latest-news-tlt p {
+  font-size: 0.9rem;
+  color: #f24;
+}
+
+.latest-deals-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  grid-gap: 15px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  color: white;
+}
+
+.top-footer {
+  background-color: #131313;
+}
+
+.social-icons {
+  padding: 40px 0 10px 0;
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+.social-icons ul {
+  list-style: none;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social-icons li {
+  background-color: #333;
+  border: 1px solid #333;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 150%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 9px;
+}
+
+.legal-statement {
+  background-color: black;
+}
+
+.more-about {
+  padding: 10px 0 50px 0;
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+.more-about ul {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-family: Shentox, sans-serif;
+  font-size: 11px;
+  color: gray;
+}
+
+.wrapper {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(170, 170, 170);
+  padding: 40px 0 40px 0;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+.footer-TNW {
+  width: 37px;
+}
+
+.footer-logoStackPath {
+  width: 65px;
+}
+
+.story p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.feature-bg p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+}
+
+.latest-article-info p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: small;
+  font-weight: 200;
+  color: red;
+}
+
+/* re-sizing tablet size */
+
+@media only screen and (min-width: 766px) {
+  .top-header {
+    display: block;
+    height: 80px;
+  }
+
+  .top-left-up {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 106px);
+    height: 32px;
+    background-color: black;
+  }
+
+  .nav-bar-down {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-news {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    list-style: none;
+    color: rgb(155, 155, 155);
+    font-weight: 600;
+  }
+
+  .navbar-news li {
+    padding-right: 20px;
+    font-size: small;
+  }
+
+  .company {
+    display: none;
+  }
+
+  .top-left-down {
+    float: left;
+    width: calc(100% - 106px);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sections-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 25px;
+    color: rgb(97, 96, 96);
+  }
+
+  .sections-menu li {
+    padding-right: 20px;
+    font-size: small;
+    color: gray;
+    font-family: Shentox, sans-serif;
+  }
+
+  .header-logo-container {
+    float: left;
+    height: 80px;
+  }
+
+  .header-logo-container img {
+    margin-top: 31px;
+  }
+
+  /* HERO TABLET SIZE */
+
+  .hero {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 24vh);
+    grid-gap: 8px;
+    height: 50vh;
+  }
+
+  .story.main {
+    grid-row: 1 / 3;
+  }
+
+  .story.main h2 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    padding: 5px 0;
+  }
+
+  .inner-container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  /* latest news tablet size */
+
+  .latest-news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 15px;
+  }
+
+  .latest-news-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-news-items-photo {
+    width: 100%;
+    height: 143px;
+  }
+
+  .latest-news-items-info {
+    padding: 0;
+  }
+
+  .latest-news-items-info h4 {
+    padding: 5px 0;
+  }
+
+  /* funding rounds tablet size */
+
+  .fund-list {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .fund-list li {
+    border-right: rgba(247, 147, 110, 0.493) solid 1px;
+    padding-right: 18px;
+    padding-left: 10px;
+  }
+
+  .funding-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  /* features tablet size */
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  /* latest-deals table size */
+
+  .latest-deals-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 15px;
+  }
+
+  .latest-news-items-photo.deals {
+    height: 200px;
+    max-width: 270px;
+  }
+
+  /* Footer tablet size */
+
+  .social-icons,
+  .more-about {
+    width: 48%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 55%;
+  }
+
+  .navbar-news li:first-of-type {
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1022px) {
+  /* Header desktop size */
+
+  .top-header {
+    height: 80px;
+  }
+
+  .header-logo-container {
+    display: none;
+  }
+
+  .top-left-header {
+    width: 100%;
+  }
+
+  .top-left-up {
+    width: 100%;
+  }
+
+  .top-left-down {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 5px;
+    color: rgb(175, 175, 175);
+  }
+
+  .company li {
+    padding-right: 15px;
+    font-size: 12.5px;
+  }
+
+  .startups-bar {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /* Hero desktop size */
+
+  .story.main {
+    position: relative;
+  }
+
+  .gradient-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
+    opacity: 0.7;
+    background-size: cover;
+  }
+
+  .logo-img {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 50%;
+    min-height: 156px;
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .inner-container {
+    max-width: 63%;
+    margin: 0 auto;
+  }
+
+  /* Latest news desktop size */
+
+  .latest-news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
+  }
+
+  /* Funding section desktop size */
+
+  .funding-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+
+  .fund-item.ghost {
+    display: block;
+  }
+
+  /* Features desktop size */
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* Latest deals desktop size */
+
+  .latest-deals-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
+  }
+
+  .latest-news-items-info.deals {
+    max-width: 200px;
+  }
+}
