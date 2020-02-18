@@ -16,7 +16,12 @@ body {
 }
 
 .container {
-  width: 96%;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.inner-container {
+  max-width: 78%;
   margin: 0 auto;
 }
 
@@ -93,7 +98,6 @@ body {
   padding-top: 8px;
 }
 
-
 /* Hero */
 
 .hero {
@@ -106,14 +110,11 @@ body {
 
 .story {
   width: 100%;
-  /* height: 185px; */
   background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* margin-top: 2px;
-  margin-bottom: 6px; */
 }
 
 .gradient-img,
@@ -153,7 +154,6 @@ body {
 .story.two {
   background-image: linear-gradient(rgba(194, 192, 192, 0), rgb(10, 10, 10)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/uk-facebook-twitter-free-speech-harmful-content-796x417.jpg);
 }
-
 
 /* latest news section */
 
@@ -241,7 +241,6 @@ body {
   color: rgb(90, 90, 90);
 }
 
-
 /* Funding Section */
 
 .funding-rounds {
@@ -250,6 +249,10 @@ body {
 
 .fund-item {
   margin-bottom: 1rem;
+}
+
+.fund-item.ghost {
+  display: none;
 }
 
 .fund-list {
@@ -353,7 +356,6 @@ body {
 .fund-feat-bottom span {
   color: rgb(177, 177, 177);
 }
-
 
 /* Features section */
 
@@ -482,7 +484,6 @@ body {
   padding: 10px 0;
 }
 
-
 /* Latest Deals */
 
 .latest-deals {
@@ -507,7 +508,6 @@ body {
   list-style: none;
   grid-gap: 15px;
 }
-
 
 /* Footer */
 
@@ -585,9 +585,7 @@ body {
   width: 65px;
 }
 
-
 /* re-sizing tablet size */
-
 
 /* @media screen and (max-width: 900px) and (min-width: 600px)
 */
@@ -596,12 +594,14 @@ body {
   .top-header {
     height: 80px;
   }
+
   .top-left-header {
     display: flex;
     flex-direction: column;
     width: calc(100% - 106px);
     height: 80px;
   }
+
   .top-left-up {
     display: flex;
     flex-direction: row;
@@ -611,16 +611,20 @@ body {
     height: 32px;
     background-color: black;
   }
+
   .top-left-down {
     width: 100%;
     height: 48px;
   }
+
   .nav-bar-down {
     display: inline-block;
   }
+
   .hamburger {
     display: none;
   }
+
   .navbar-news {
     display: flex;
     flex-direction: row;
@@ -628,10 +632,12 @@ body {
     list-style: none;
     color: white;
   }
+
   .navbar-news li {
     padding-right: 5px;
     font-size: small;
   }
+
   .company {
     display: flex;
     flex-direction: row;
@@ -639,6 +645,7 @@ body {
     margin-right: 5px;
     color: white;
   }
+
   .top-left-down {
     width: 100%;
     height: 48px;
@@ -647,10 +654,12 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
   .company li {
     padding-right: 5px;
     font-size: x-small;
   }
+
   .sections-menu {
     display: flex;
     flex-direction: row;
@@ -658,102 +667,131 @@ body {
     margin-left: 25px;
     color: rgb(97, 96, 96);
   }
+
   .sections-menu li {
     padding-right: 5px;
     font-size: small;
   }
+
   .header-logo-container {
     height: 80px;
   }
+
   .header-logo-container img {
     margin-top: 31px;
   }
+
   /* HERO TABLET SIZE */
+
   .hero {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 24vh);
     grid-gap: 8px;
     height: 50vh;
   }
+
   .story.main {
     grid-row: 1 / 3;
   }
+
   /* latest news tablet size */
+
   .latest-news-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 15px;
   }
+
   .latest-news-items {
     display: flex;
     flex-direction: column;
   }
+
   .latest-news-items-photo {
     width: 100%;
     height: 143px;
   }
+
   .latest-news-items-info {
     padding: 0;
   }
+
   /* funding rounds tablet size */
+
   .fund-list {
     display: flex;
     font-size: 0.9rem;
     font-weight: 400;
   }
+
   .fund-list li {
     border-right: rgba(247, 147, 110, 0.493) solid 1px;
     padding-right: 18px;
     padding-left: 10px;
   }
+
   .funding-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
+
   /* features tablet size */
+
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
   /* latest-deals table size */
+
   .latest-deals-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 15px;
   }
+
   .latest-news-items-photo.deals {
     height: 200px;
     max-width: 270px;
   }
+
   /* Footer tablet size */
+
   .social-icons,
   .more-about {
     width: 48%;
     margin: 0 auto;
   }
+
   .wrapper {
     width: 55%;
   }
 }
 
 @media only screen and (min-width: 1022px) {
+  /* Header desktop size */
   .top-header {
     height: 80px;
   }
+
   .header-logo-container {
     display: none;
   }
+
   .top-left-header {
     width: 100%;
   }
 
+  /* Hero desktop size */
+
   .story main {
     position: relative;
   }
+
   .gradient-img {
     display: inline-block;
     position: relative;
@@ -765,6 +803,7 @@ body {
     opacity: 0.7;
     background-size: cover;
   }
+
   .logo-img {
     display: inline-block;
     z-index: 2;
@@ -775,5 +814,35 @@ body {
     min-height: 156px;
     background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg);
     background-repeat: no-repeat;
+  }
+
+  /* Latest news desktop size */
+
+  .latest-news-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
+  }
+
+  /* Funding section desktop size */
+
+  .funding-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+
+  .fund-item.ghost {
+    display: block;
+  }
+
+  /* Latest deals desktop size */
+
+  .latest-deals-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 25px;
   }
 }
