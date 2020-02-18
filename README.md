@@ -7,6 +7,9 @@ This project consists of building an HTML responsive clone page that matches the
 - Media Queries
 - Backgrounds and Gradients
 
+# Live Demo
+https://rawcdn.githack.com/dansantander/nextweb/14b658b4a4f7159d14f0c4604428ea2aa9e1ddcd/index.html
+
 # Authors
 👤 Daniel Santander
 
@@ -16,7 +19,7 @@ This project consists of building an HTML responsive clone page that matches the
 
 👤 Carlos Prieto Barron
 
-Github: @carlosprietobarron
+- Github: @carlosprietobarron
 
 # Contributing
 Contributions, issues and feature requests are welcome!
