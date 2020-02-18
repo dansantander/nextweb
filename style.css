@@ -129,12 +129,6 @@ body {
   color: gray;
 }
 
-.story p:first-of-type {
-  font-family: Shentox, sans-serif;
-  font-size: 0.8rem;
-  color: white;
-}
-
 .story h2 {
   font-family: Avalon, sans-serif;
   font-size: 1.2rem;
@@ -422,11 +416,6 @@ body {
   font-size: x-small;
 }
 
-.feature-bg p:first-of-type {
-  font-family: Shentox, sans-serif;
-  font-size: 0.8rem;
-}
-
 .feature-bg h2 {
   font-family: Avalon, sans-serif;
   font-size: 1.1rem;
@@ -589,6 +578,17 @@ body {
   width: 65px;
 }
 
+.story p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.feature-bg p:first-of-type {
+  font-family: Shentox, sans-serif;
+  font-size: 0.8rem;
+}
+
 /* re-sizing tablet size */
 
 @media only screen and (min-width: 766px) {
@@ -596,13 +596,6 @@ body {
     display: block;
     height: 80px;
   }
-
-  /* .top-left-header {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 106px);
-    height: 80px;
-  } */
 
   .top-left-up {
     float: left;
@@ -630,10 +623,6 @@ body {
     list-style: none;
     color: rgb(155, 155, 155);
     font-weight: 600;
-  }
-
-  .navbar-news li:first-of-type {
-    color: white;
   }
 
   .navbar-news li {
@@ -781,6 +770,10 @@ body {
 
   .wrapper {
     width: 55%;
+  }
+
+  .navbar-news li:first-of-type {
+    color: white;
   }
 }
 
